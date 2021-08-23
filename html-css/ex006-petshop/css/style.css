@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap");
+
+:root {
+  --primary-color: #ffbe51;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color);
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 113px;
+  padding: 0 75px;
+  margin-bottom: 100px;
+}
+
+.header-logo {
+  width: 250px;
+  height: 85px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Main */
+
+main {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-weight: 800;
+  margin-bottom: 100px;
+}
+
+.main-description {
+  flex: 1;
+  width: 100%;
+  display: block;
+  text-transform: uppercase;
+  color: #757575;
+  width: 100%;
+  font-size: 3vw;
+  align-self: center;
+}
+
+.main-image {
+  flex: 1;
+  max-width: 100%;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Services */
+
+.services {
+  background: #e5e5e5;
+  width: 100%;
+  margin-bottom: 100px;
+  height: 600px;
+}
+
+.services h2 {
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 3.3%;
+}
+
+.service-list img {
+  width: 250px;
+}
+
+.service-list p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* petting */
+
+.petting {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+
+.petting img {
+  max-width: 100%;
+  flex: 1;
+}
+
+.petting-description {
+  flex: 1;
+}
+
+.petting h3 {
+  font-size: 1.8vw;
+  font-weight: bold;
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+.petting p {
+  font-size: 1.3vw;
+  color: #757575;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  background: var(--primary-color);
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+.contact-us p {
+  margin-bottom: 20px;
+}
+
+.contact-us a {
+  text-decoration: none;
+  color: #000;
+}
+
+.map {
+  flex: 1;
+  width: 100%;
+}
+
+.maps {
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+@media (max-width: 1100px) {
+  .main-section {
+    display: block;
+  }
+
+  .main-description {
+    display: block;
+    width: 100%;
+    margin: 25px auto;
+  }
+
+  .main-image {
+    max-width: 100%;
+    display: block;
+    width: 80%;
+  }
+
+  .services {
+    height: auto;
+    margin: 100px auto;
+  }
+
+  .service-list {
+    display: block;
+    height: auto;
+    justify-content: space-around;
+    gap: 3.3%;
+  }
+
+  .service-list img {
+    width: 250px;
+    display: block;
+    margin: 25px auto;
+  }
+
+  .service-list p {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .petting {
+    display: block;
+    text-align: center;
+  }
+
+  .petting img {
+    display: block;
+    margin: 0 auto 50px auto;
+  }
+
+  .petting-description {
+    padding: 0 15%;
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    display: block;
+    padding-bottom: 50px;
+  }
+}
+
+/* ************************************************* */
+/* SERVIÇOS */
+/* ************************************************* */
+
+.services-title {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+.services-services article {
+  display: flex;
+  padding: 0 100px;
+  gap: 50px;
+}
+.line {
+  height: 5px;
+  width: 100%;
+  background: #c4c4c4;
+  margin: 50px 0;
+}
+
+.service-description {
+  position: relative;
+  font-weight: 400;
+  color: #757575;
+}
+
+.price {
+  margin-bottom: 20px;
+}
+
+.price h2 {
+  display: inline-block;
+  font-size: 2.2vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+  margin-right: 20px;
+}
+
+.price span {
+  font-size: 1.6vw;
+  font-weight: 400;
+  color: #000;
+}
+
+.service-description p {
+  display: block;
+  font-size: 1.5vw;
+}
+
+.service-description button {
+  position: absolute;
+  bottom: 0;
+  border: none;
+  font-weight: 800;
+  background: #ffc107;
+  width: 245px;
+  height: 32px;
+}
+
+.services-services article:last-child {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+  .services-services article {
+    display: block;
+  }
+
+  .service-img {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .price h2,
+  span {
+    display: block;
+    text-align: center;
+  }
+
+  .service-description p {
+    margin-bottom: 20px;
+  }
+
+  .service-description button {
+    position: unset;
+    width: 100%;
+    height: 40px;
+  }
+}
+
+/* ************************************************* */
+/* CONTATO */
+/* ************************************************* */
+
+.container-contato {
+  display: flex;
+  gap: 100px;
+  height: 62vh;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.contato-title {
+  font-size: 40px;
+  color: #ffc107;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.container-contato form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-contato input {
+  padding: 5px 0;
+}
+
+.container-contato input,
+.container-contato textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.container-contato textarea {
+  resize: none;
+  height: 70%;
+}
+
+.container-contato button {
+  justify-self: flex-end;
+  border: none;
+  height: 30px;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  background: #ffc107;
+  cursor: pointer;
+}
+
+.contato-info {
+  position: relative;
+  flex: 1;
+}
+
+.contato-info p {
+  margin-bottom: 20px;
+}
+
+.contato-info a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contato-info iframe {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-contato {
+  background: #c4c4c4;
+  height: 57px;
+}
+
+.footer-contato p {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .container-contato {
+    display: block;
+    margin: 50px auto;
+    padding: 0 50px;
+  }
+  .container-contato form {
+    margin-bottom: 50px;
+  }
+}
+
+/* ************************************************* */
+/* LOGIN */
+/* ************************************************* */
+
+.login-header {
+  background: #ffc107;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.login-img {
+  flex: 1;
+}
+.login-form-div {
+  flex: 1;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  width: 411px;
+  height: 423px;
+  background: #fff;
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+
+.form-box h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #ffc107;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px 0;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box input {
+  width: 70%;
+  padding: 5px 0;
+  margin: 0 auto 20px auto;
+}
+
+.form-box button {
+  width: 70%;
+  margin: 0 auto 20px auto;
+  height: 32px;
+  font-weight: 800;
+  color: #fff;
+  background: #ffc107;
+  border: none;
+}
+
+.form-box a {
+  text-decoration: none;
+  color: #000;
+  text-transform: lowercase;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .login-img {
+    display: none;
+  }
+}
+
+/* ************************************************* */
+/* CADASTRO */
+/* ************************************************* */
+
+.cadastro h2 {
+  margin-bottom: 20px;
+}
